@@ -25,6 +25,19 @@ ul {
   list-style: none;
 }
 
+/* сброс всех отступов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* ШАПКА */
 /* Логотип (текст) */
 .logo-head {
@@ -79,6 +92,8 @@ ul {
 /* Настройка свойств блока героя */
 .hero {
   background-color: var(--secondary-bg-color);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -87,9 +102,9 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /* Настройка отображения кнопок */
@@ -103,6 +118,12 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  min-width: 200px;
+  text-align: center;
 }
 
 .button:hover,
@@ -133,6 +154,11 @@ ul {
   color: var(--primary-text-color);
 
   line-height: 1.71;
+  margin-bottom: 94px;
+}
+
+.section.last {
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -142,6 +168,12 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  padding-bottom: 50px;
+}
+
+.section-title.team {
+  padding-top: 94px;
 }
 
 /* Настройка секции "Особенности" */
@@ -155,6 +187,8 @@ ul {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 /* Настройка секции "Наша команда" */
@@ -228,4 +262,14 @@ ul {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: turquoise;
+
+  outline: 2px solid tomato;
 }
