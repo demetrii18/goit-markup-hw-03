@@ -203,6 +203,10 @@ ul {
 
 /* Настройка секции "Особенности" */
 .features {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  /* width: calc((100% - 90px) / 4); */
   color: var(--primary-text-color);
 }
 
@@ -214,6 +218,10 @@ ul {
   text-transform: uppercase;
 
   margin-bottom: 10px;
+}
+
+.features .item {
+  max-width: 270px;
 }
 
 /* Настройка секции "Наша команда" */
