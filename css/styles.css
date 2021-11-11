@@ -40,7 +40,15 @@ ul {
 
 /* ШАПКА */
 /* Логотип (текст) */
+.container.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .logo-head {
+  margin-right: 93px;
+
   color: var(--primary-black-color);
 
   font-family: Raleway, sans-serif;
@@ -48,10 +56,6 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-accent {
@@ -59,7 +63,19 @@ ul {
 }
 
 /* Навигация по сайту */
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -78,6 +94,15 @@ ul {
 }
 
 /* Навигация по авторизации */
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav .item + .item {
+  margin-left: 50px;
+}
+
 .contact-nav .link {
   color: var(--primary-text-color);
 
