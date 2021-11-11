@@ -48,6 +48,10 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-accent {
@@ -169,11 +173,7 @@ ul {
   line-height: 1.17;
   text-align: center;
 
-  padding-bottom: 50px;
-}
-
-.section-title.team {
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 /* Настройка секции "Особенности" */
@@ -207,8 +207,23 @@ ul {
   line-height: 1.19;
 }
 
-/* ПОДВАЛ */
+.section-title.team {
+  padding-top: 94px;
+}
 
+.our-team .workers {
+  margin-bottom: 30px;
+}
+
+.our-team .title {
+  margin-bottom: 10px;
+}
+
+.cards .text {
+  padding-bottom: 30px;
+}
+
+/* ПОДВАЛ */
 .footer {
   background-color: var(--secondary-bg-color);
 }
@@ -221,6 +236,10 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .address .link {
@@ -233,6 +252,7 @@ ul {
 
 .address {
   font-style: normal;
+  padding-bottom: 60px;
 }
 
 .address .link-opacity {
@@ -245,10 +265,13 @@ ul {
 /* Контент вкладки "Портфолио" */
 
 .filter {
-  color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.87;
+}
+
+.filter .link {
+  color: var(--primary-text-color);
+  display: inline-block;
 }
 
 .filter .title {
@@ -269,7 +292,22 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: turquoise;
 
   outline: 2px solid tomato;
+}
+
+.section.portfolio {
+  margin-bottom: 0;
+}
+
+.link > .posters {
+  margin-bottom: 20px;
+}
+
+.link > .title {
+  margin-bottom: 4px;
+}
+
+.link > .text {
+  padding-bottom: 20px;
 }
