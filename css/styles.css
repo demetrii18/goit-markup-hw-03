@@ -314,7 +314,6 @@ header {
 /* ПОДВАЛ */
 .footer {
   background-color: var(--secondary-bg-color);
-  height: 252px;
 }
 
 .logo-foot {
